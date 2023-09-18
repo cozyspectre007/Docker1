@@ -1,5 +1,10 @@
 pipeline {
   agent none
+  tools {
+        maven "default"
+        jdk "default"
+        git "default"
+    }
   environment {
     GITHUB_TOKEN=credentials('github-token')
     IMAGE_NAME='alpine/jenkins-example-cosign'
