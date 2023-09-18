@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent none
   environment {
     GITHUB_TOKEN=credentials('github-token')
     IMAGE_NAME='alpine/jenkins-example-cosign'
