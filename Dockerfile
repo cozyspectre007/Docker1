@@ -1,1 +1,1 @@
-FROM alpine
+FROM openjdk:8
